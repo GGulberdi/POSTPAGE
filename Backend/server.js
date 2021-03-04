@@ -5,7 +5,8 @@ const mongoose = require ('mongoose');
 require('dotenv').config({path:'.env'})
 
 
-mongoose.connect(process.env.DATABASE,
+// mongoose.connect(process.env.DATABASE,
+    mongoose.connect("mongodb+srv://Gul:Tazedatabase@cluster0.aqxwp.mongodb.net/node_crud?retryWrites=true&w=majority",
 
     {
         useUnifiedTopology:true,
